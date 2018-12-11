@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context=".model.HomeActivity">
+
+    <ImageButton
+        android:id="@+id/HomeSave_Button"
+        android:layout_width="247dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="88dp"
+        android:background="@color/colorPrimary"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView9"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/imageView9"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/b_5" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="350dp"
+        android:layout_height="367dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.145"
+        app:srcCompat="@drawable/logogo" />
+
+    <Button
+        android:id="@+id/HomeFoodList_Button"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+        android:layout_width="186dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:text="รายการอาหารที่รับประทาน"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/HomeSave_Button"
+        app:layout_constraintStart_toStartOf="@+id/HomeSave_Button"
+        app:layout_constraintTop_toBottomOf="@+id/HomeSave_Button" />
+
+</android.support.constraint.ConstraintLayout>

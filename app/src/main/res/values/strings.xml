@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SUGuide</string>
+
+    <string-array name="name">
+    <item>อาหารคาว</item>
+    <item>อาหารหวาน</item>
+    <item>ของว่างระหว่างวัน</item>
+    <item>เครื่องดื่ม</item>
+    </string-array>
+</resources>
+

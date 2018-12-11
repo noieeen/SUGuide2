@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".model.AddFoodActivity">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="374dp"
+        android:layout_height="116dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.064"
+        app:srcCompat="@drawable/head3" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="140dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bg"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintHorizontal_bias="0.546"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/b_4" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="188dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="92dp"
+        android:background="@drawable/bg"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/b_save" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="121dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bg"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton2"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="@+id/imageButton2"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/b_cancel" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="กดเพื่อถ่ายรูปอาหาร"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton"
+        app:layout_constraintStart_toStartOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+    <TextView
+        android:id="@+id/FoodType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="ประเภทอาหาร :"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="53dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/FoodName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="อาหาร :"
+        app:layout_constraintStart_toStartOf="@+id/FoodType"
+        app:layout_constraintTop_toBottomOf="@+id/FoodType" />
+
+    <TextView
+        android:id="@+id/FoodDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="วันที่ :"
+        app:layout_constraintStart_toStartOf="@+id/FoodName"
+        app:layout_constraintTop_toBottomOf="@+id/FoodName" />
+
+    <TextView
+        android:id="@+id/FoodCal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="แคลอรี่โดยประมาณ :"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton2"
+        app:layout_constraintStart_toStartOf="@+id/FoodDate"
+        app:layout_constraintTop_toBottomOf="@+id/FoodDate"
+        app:layout_constraintVertical_bias="0.011" />
+
+    <Spinner
+        android:id="@+id/SpinnerFoodTypeChoose"
+        android:layout_width="180dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toEndOf="@+id/FoodType"
+        tools:layout_editor_absoluteY="319dp" />
+
+    <EditText
+        android:id="@+id/FillFoodName"
+        android:layout_width="180dp"
+        android:layout_height="20dp"
+        android:background="@drawable/custome_edit_text_bg"
+        android:ems="10"
+        android:hint="  วันที่"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/FoodDate"
+        app:layout_constraintEnd_toEndOf="@+id/FillDate"
+        app:layout_constraintHorizontal_bias="0.987"
+        app:layout_constraintStart_toStartOf="@+id/FillDate"
+        app:layout_constraintTop_toTopOf="@+id/FoodDate"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/FillDate"
+        android:layout_width="180dp"
+        android:layout_height="20dp"
+        android:background="@drawable/custome_edit_text_bg"
+        android:ems="10"
+        android:hint="  ชื่ออาหาร"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/FoodName"
+        app:layout_constraintEnd_toEndOf="@+id/SpinnerFoodTypeChoose"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/SpinnerFoodTypeChoose"
+        app:layout_constraintTop_toTopOf="@+id/FoodName"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/FillCal"
+        android:layout_width="107dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:background="@drawable/custome_edit_text_bg"
+        android:ems="10"
+        android:hint="  Ex.200"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/FoodCal"
+        app:layout_constraintStart_toStartOf="@+id/FillFoodName"
+        app:layout_constraintTop_toTopOf="@+id/FoodCal"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calorie"
+        app:layout_constraintBottom_toBottomOf="@+id/FillCal"
+        app:layout_constraintEnd_toEndOf="@+id/FillFoodName"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/FillCal"
+        app:layout_constraintTop_toTopOf="@+id/FillCal" />
+
+</android.support.constraint.ConstraintLayout>
